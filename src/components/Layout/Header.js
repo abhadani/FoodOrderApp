@@ -9,7 +9,7 @@ const Header = (props) => {
   const cartCtx = useContext(CartContext);
 
   const noOfCartItem = cartCtx.items.reduce((curNumber, item) => {
-    return curNumber + item.amount;
+    return curNumber  + item.amount;
   }, 0)
 
   return (
