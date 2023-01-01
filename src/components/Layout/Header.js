@@ -22,7 +22,7 @@ const Header = (props) => {
       return;
     }
     setBtnIsHighlighted(true);
-    
+
     const timer = setTimeout(() => {
       setBtnIsHighlighted(false);
     }, 300);
@@ -36,7 +36,7 @@ const Header = (props) => {
     <React.Fragment>
       <header className={classes.header}>
         <h1>ReactMeal</h1>
-        <button className={classes.button} onClick = {props.onShowCart}>
+        <button className={btnClasses} onClick = {props.onShowCart}>
             <span className={classes.icon}><CartIcon /></span>
             <span>Your Cart</span>
             <span className={classes.badge}>{noOfCartItem}</span>
