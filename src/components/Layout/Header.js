@@ -35,7 +35,7 @@ const Header = (props) => {
   return (
     <React.Fragment>
       <header className={classes.header}>
-        <h1>ReactMeal</h1>
+        <h1>Ami's Kitchen</h1>
         <button className={btnClasses} onClick = {props.onShowCart}>
             <span className={classes.icon}><CartIcon /></span>
             <span>Your Cart</span>
